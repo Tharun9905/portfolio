@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "../components/CustomCursor";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className="antialiased bg-background text-foreground min-h-screen selection:bg-primary/30">
         <div className="noise-bg pointer-events-none" />
         <CustomCursor />
+        <WhatsAppButton />
         {children}
       </body>
     </html>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Phone, ExternalLink } from "lucide-react";
+import { Mail, Phone, ExternalLink, MessageCircle } from "lucide-react";
 
 export default function ContactSection() {
     const currentYear = new Date().getFullYear();
@@ -35,6 +35,15 @@ export default function ContactSection() {
                             >
                                 <Mail className="w-5 h-5" />
                                 <span>Shoot me an email</span>
+                            </a>
+                            <a
+                                href="https://wa.me/919652664259?text=Hi%20Tharun,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20chat!"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center space-x-3 px-8 py-4 bg-[#25D366]/10 border border-[#25D366]/30 text-[#25D366] rounded-full font-bold hover:bg-[#25D366]/20 transition-colors"
+                            >
+                                <MessageCircle className="w-5 h-5" />
+                                <span>WhatsApp Me</span>
                             </a>
                             <a
                                 href="tel:+919652664259"
@@ -89,10 +98,10 @@ export default function ContactSection() {
                     </div>
 
                     <div className="flex items-center gap-4 text-gray-500 text-sm">
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
+                        <a href="https://www.linkedin.com/in/devarla-tharun-sai-70a36226a/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
                             LinkedIn <ExternalLink className="w-3 h-3" />
                         </a>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
+                        <a href="https://github.com/Tharun9905" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
                             GitHub <ExternalLink className="w-3 h-3" />
                         </a>
                     </div>
